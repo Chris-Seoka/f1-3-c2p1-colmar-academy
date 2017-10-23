@@ -1,0 +1,391 @@
+
+        .main-container {
+            border: 1px solid #e3e3e3;
+            padding: 0px;
+        }
+
+        .col-md-2, .col-md-4, .col-md-5, .col-md-7, .col-md-10 {
+            padding: 0px;
+        }
+
+        .no-margin, .row {
+            margin: 0px;
+        }
+
+        .padding-side-24 {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .padding-sides-72 {
+            padding-left: 72px;
+            padding-right: 72px;
+        }
+
+        .padding-bob-32 {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        .padding-bob-8 {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        padding-16 {
+            padding: 16px
+        }
+
+        .padding-24 {
+            padding: 24px
+        }
+
+        .padding-left-20 {
+            padding-left: 20px;
+        }
+
+        .padding-bottom-30 {
+            padding-bottom: 30px;
+        }
+
+        margin-bottom-8 {
+            margin-bottom: 8px;
+        }
+
+        .margin-bob-32 {
+            margin-bottom: 32px;
+            margin-top: 32px;
+        }
+
+        .margin-bottom-30 {
+            margin-bottom: 30px;
+        }
+
+        header {
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            height: 64px;
+            background-color: #fff;
+            border-bottom: 1px solid seashell;
+            align-items: center;
+            padding: 32px 24px;
+        }
+
+            header img {
+                height: 32px;
+            }
+
+        nav {
+            text-align: right;
+            flex-grow: 1;
+        }
+
+            nav a {
+                display: inline-block;
+                margin-right: 16px;
+            }
+        .company-name {
+            font-size: 16px;
+            font-weight:900;
+            margin:14px 0px;
+        }
+
+            .company-name span:first-child {
+                color: #4a4a4a;
+            }
+
+            .company-name span:last-child {
+               color: #d8d8d8;
+            }
+
+        .something-new {
+            background-color: #d8d8d8;
+            margin-top:60px;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 400px;
+        }
+
+        
+        .something-new .btn {
+            background-color: #4a4a4a;
+            width: 290px;
+            border-radius: 0px;
+            border: none;
+        }
+
+        .campus-events {
+            border-left: 1px solid #e3e3e3;
+        }
+
+            .campus-events .event, .exhibition .event {
+                padding: 16px;
+            }
+
+                .campus-events .event:first-child {
+                    padding-top: 0px;
+                    border-bottom: 4px solid #e3e3e3;
+                }
+
+                .campus-events .event:last-child, .exhibition .event:first-child {
+                    background-color: #d8d8d8;
+                }
+
+                .campus-events .event .image, .exhibition .event .event-details {
+                    width: 35%;
+                }
+
+                    .campus-events .event .image img, .exhibition .event .image img {
+                        height: auto;
+                        width: 100%;
+                    }
+
+                .campus-events .event .event-details {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    width: 65%;
+                    padding-left: 20px;
+                }
+
+                .exhibition .event .event-details {
+                    padding-left: 20px;
+                }
+
+        .event {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .start-learning {
+            background-color: #d8d8d8;
+            padding-bottom: 32px;
+        }
+
+        .brochure {
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .brochure .faculty {
+                padding-right: 32px;
+            }
+
+            .brochure .courses {
+                background-color: #fff;
+                padding: 24px 16px;
+            }
+
+                .brochure .courses h3 {
+                    margin-top: 0px;
+                    margin-bottom: 8px;
+                }
+
+            .brochure .faculty:nth-child(3n+3) {
+                padding-right: 0px;
+            }
+
+
+            .brochure .faculty img {
+                width: 100%;
+                height: auto;
+            }
+
+        .content-source {
+            font-size: 11px;
+            margin-top: 30px;
+            margin-bottom: 0px;
+        }
+
+        .thesis-exhibit {
+            border-bottom: 1px solid #e3e3e3;
+        }
+
+        .exhibition {
+            padding-top: 24px;
+        }
+
+        .thesis-exhibit video {
+            width: 100%;
+        }
+
+        footer {
+            padding-top: 16px;
+        }
+
+            footer ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            footer li {
+                float: right;
+                margin-left: 8px;
+            }
+
+                footer li a {
+                    color: #d8d8d8;
+                }
+
+        .font-size-smaller {
+            font-size: smaller;
+        }
+        .mobile-menu {
+            display: none;
+        }
+
+        @media only screen and (max-width: 1300px) {
+            .container {
+                padding: 0;
+            }
+        }
+
+        @media only screen and (max-width : 1200px) {
+        }
+
+        @media only screen and (min-width:320px) and (max-width : 992px) {
+
+            .container {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+
+            .company-name{
+                display:none;
+            }
+
+
+            .something-new {
+                width: 100%;
+                padding: 0;
+            }
+            .practicing .banner {
+                display:none;
+            } 
+            .banner {
+                width: 100%;
+            }
+
+                .banner img {
+                    width: 100%;
+                    height: auto;
+                }
+
+            .materials {
+                text-align: left;
+                padding:32px 16px;
+            }
+
+                .materials h3, .start-learning h1, .thesis-exhibit h1 {
+                    font-size: 90px;
+                    font-weight: 900;
+                }
+
+                .materials p {
+                    margin-top: 32px;
+                    font-size: 4em;
+                }
+                .materials .btn {
+                    width: 100%;
+                    padding: 20px;
+                    font-size: 30px;
+                }
+            .campus-events .event:first-child{
+                border:none;
+            }
+            .campus-events .event:last-child, .exhibition .event:first-child{
+                background-color:#fff;
+            }
+            
+            .campus-events .event .image, .exhibition .event .event-details {
+                width: 100%;
+            }
+
+            .event-details h4, .banner h3, .courses h3 {
+                font-size: 4em;
+            }
+            .event-details p, .event-details a{
+                font-size:2em;
+            }
+
+            .start-learning {
+                background-color: #fff;
+                padding:16px;
+            }
+            .brochure .faculty img, .brochure .faculty .courses p, .exhibition .event, .exhibition h3, 
+            .exhibition p, footer .col-md-2 {
+                display: none;
+            }
+            .brochure .faculty {
+                width: 100%;
+            }
+                .brochure .faculty, .brochure .faculty .courses {
+                    background-color: #d8d8d8;
+                }
+                .brochure .faculty  {
+                    padding:16px 16px 24px 16px;
+                    margin-bottom:8px;
+
+                }
+
+            .thesis-exhibit{
+                border-bottom:none;
+            }
+            
+            footer p {
+                text-align: center;
+                font-size: 3em;
+                padding: 16px;
+            }
+
+            #lecture {
+                content: url("./assets/images/information-guest-lecture-mobile.jpg");
+            }
+
+            #informationCampus {
+                content: url("./assets/images/information-campus-mobile.jpg");
+            }
+
+            #orientation {
+                content: url("./assets/images/information-orientation-mobile.jpg");
+            }
+            .event {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .desktop-menu{
+                display:none;
+            }
+            
+            .mobile-menu {
+                display: flex;
+                justify-content:space-between;
+               
+            }
+                
+        }
+
+        @media only screen and (max-width : 786px) {
+        }
+
+        @media only screen and (max-width : 540px) {
+        }
+
+        @media only screen and (max-width : 390px) {
+        }
+
+        @media (max-width : 320px) {
+        }
+  
